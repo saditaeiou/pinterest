@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ 
+#navbar-pinterest{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    padding: 15px ;
+    padding-left: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenes{
+    width: 24px;
+    opacity: 73%;
+    display: center ;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0);
+    justify-items: center;
+}
+
+
+
+#mas{
+   width: 15px;
+   border-radius: 5px;
+}
+
+
+
+.finder {
+    background-image: url(vidrio-de-aumento.png) ;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 15px;
+    background-color: rgb(231, 231, 231);
+    width: 770px;
+    height: 45px;
+    border: solid rgba(185, 77, 77, 0);
+    border-radius: 25px;
+    text-indent: 45px ;
+    position: static;
+}
+
+.finder:hover{
+    background-color: rgb(219, 215, 215);
+}
+
+.botoness{
+    border-radius:25px ;
+    background-color: white;
+    border: solid white;
+    font-size: 15px;
+    font-weight: bold;
+    position: static
+}
+
+.pinterest-icon{
+    width: 24px;
+    opacity: 100%;
+}
+
+
+
+#inicio {
+    background-color: rgb(0, 0, 0);
+    border: solid rgba(255, 255, 255, 0) ;
+    border-radius: 25px;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px ;
+    cursor: pointer;
+} 
+
+#explorar{
+    margin-left: 10px;
+    margin-right: 10px ;
+    cursor: pointer;
+}
+
+#crear{
+    margin-left: 10px;
+    margin-right: 10px ;
+    cursor: pointer;
+}
+
+#notification{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#message{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profile-img{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.pinterest-icon:hover {
+    background-color: rgb(231, 231, 231);
+    border:solid rgba(255, 255, 255, 0) ;
+    border-radius: 30px;
+    
+}
+
+
+#notification:hover {
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    border: 2px;
+    border-radius: 30px;
+}
+
+#message:hover {
+    background-color: rgb(231, 231, 231);
+    border:solid rgba(255, 255, 255, 0) ;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+#profile-img:hover {
+    background-color: rgb(231, 231, 231);
+    border:solid rgb(231, 231, 231) ;
+    border-radius: 30px;
+    padding: 7px;
+    padding: left 28px;;
+}
+
+#mas{
+    width: 15px
+}
+
+.flecha:hover {
+    background-color: rgb(231, 231, 231);
+    border:solid rgba(255, 255, 255, 0) ;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+
+
+main{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+}
+
+#content{
+   background-color: rgb(255, 255, 255);
+   justify-content: center;
+   padding-top: 100px;
+   padding-left: 30px ;
+   padding-right: 20px;
+   grid-template-columns: repeat(5, 1fr);
+   line-height: 0;
+   position: static;
+}
+
+.grupo1{
+    grid-column: 1/2;
+}
+
+.grupo2{
+    grid-column: 2/3;
+}
+
+.grupo3{
+    grid-column: 3/4;
+}
+
+.grupo4{
+    grid-column: 4/5;
+}
+
+.grupo5{
+    grid-column: 5/6;
+}
+
+.card-image{
+    background-color: rgb(0, 0, 0);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 32px;
+    margin-bottom: 20px;
+    position: static;
+    opacity: 100%;
+    visibility: visible;
+}
+
+.imagen{
+    border-radius: 30px;
+}
+
+.imagen:hover{
+    opacity: 0.7;
+}
+
+.boton-subir {
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+.boton-subir img{
+    width:20px
+}
+
+.boton-puntos {
+    position: absolute;
+    bottom:10px;
+    right:10%;
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+.boton-puntos img{
+    width:20px
+}
+
+
+.card-image .botones-imagenes{
+    height: 100%;
+    position: sticky;
+    visibility: hidden;
+    display: block;
+}
+
+.card-image:hover  .botones-imagenes {
+    visibility: visible;
+    cursor: pointer;
+    
+}
+.card-image:hover  .imagen {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:700px){ 
+
+    #content{
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        padding-top: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 0;
+        position: static;
+        padding-right: 0px;
+        margin: right 0px;
+        
+    }
+    
+    .grupo1{
+        grid-column: 1/2;
+        
+    }
+    
+    .grupo2{
+        grid-column: 2/3;
+    }
+    
+    .grupo3{
+        grid-column: 1/2;
+    }
+    
+    .grupo4{
+        grid-column: 2/3;
+    }
+    
+    .grupo5{
+        grid-column: 1/2;
+    }
+
+    .finder{
+        width: 30%;
+        height: 45px;
+    }
+    
+    #explorar{
+        display: none;
+    }
+    
+    #crear{
+        display: none;
+    }
+    
+    .imagen {
+        width: 200px;
+        align-self: center;
+    }
+
+    #notification{
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    
+    #message{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #profile-img{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    #navbar-pinterest{
+        justify-content: center;
+    }
+
+}
+
+
